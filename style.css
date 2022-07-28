@@ -1,0 +1,124 @@
+body{
+    overflow-x: hidden;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Noto+Serif&family=Roboto&family=Yuji+Hentaigana+Akebono&display=swap');
+nav{
+    border-bottom: 4px solid #c6373f;;
+}
+.slider{
+    border-bottom: 4px solid #0c0c0c;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: url(blog_img/mv.jpg) center/cover;
+    background-blend-mode: darken;
+}
+.slider h2{
+    position: absolute;
+    font-family: 'YujiHentaiganaAkebono';
+    top: 90px;
+    left: 190px;
+    font-size: 1.6rem;
+    text-align: center;
+    color: snow;
+    line-height: 1.7;
+    letter-spacing: 1px;
+}
+.slider h2 span.bl{
+    font-weight: bold;
+    font-size: 2rem;
+    display: block;
+    margin-top: 10px;
+}
+.slider h2 span.uline{
+    border-bottom: 3px solid snow;
+    padding: 0 0 4px 0;
+}
+.slider-wrapper{
+    width: 80%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    /* background-color: slategrey; */
+    padding: 40px;
+}
+.slider-content{
+    flex: 1 0 100%;
+    /* padding: 0 0 0 30%; */
+}
+h1.b-tit{
+    position: relative;
+    font-weight: bold;
+    padding: 4px 0 4px 13px;
+    border-left: 8px solid #c6373f;
+    /* border-bottom: 4px solid #c6373f; */
+    /* border-radius: 10px; */
+    /* text-shadow: 1px 1px 10px rgb(150, 145, 145); */
+    width: 100%;
+}
+/* h1.b-tit::before{
+  position: absolute;
+  left: -20px;
+  top: 0;
+  content: "";
+  width: 8px;
+  height: 50px;
+  background: #c6373f;
+} */
+.s-box{
+    width: 100%;
+}
+.card{
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+    /* transform: scale(0); */
+    transition: 1s ease-out;
+}
+.card:hover{
+    transform: scale(1.02);
+}
+.b-card{
+    width: 100%;
+}
+.card-slide{
+    background-color: #c6373f !important;
+}
+footer{
+    /* background-color: #d1cbc8 !important; */
+    border-top: 4px solid #c6373f;
+    background: url(blog_img/1638696272wallpaper.jpg) bottom/cover;
+    background-blend-mode: lighten;
+    padding: 40px;
+    position: relative;
+}
+
+footer>div{
+    z-index: 99999;
+}
+footer .contact p{
+    /* font-family: 'Yuji Hentaigana Akebono'; */
+    font-weight: bold;
+}
+footer .contact i{
+    color: white;
+}
+footer .contact a{
+    transition: all 0.4s ease-out;
+}
+footer .contact a:hover i{
+    transform: rotatez(10deg);
+}
+footer .contact a.term:hover{
+    color: white;
+}
+footer .copyright p{
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    /* font-family: 'Yuji Hentaigana Akebono'; */
+    font-weight: bold;
+}
+footer .copyright span{
+    /* font-family: 'Lobster'; */
+    font-weight: bold;
+    font-size: 1rem;
+    color: red;
+
+}
